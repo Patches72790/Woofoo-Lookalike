@@ -14,10 +14,10 @@ const NavBar = ({
   return (
     <div id='nav' style={Styles.navBar} >
         <h1>Woofoo Lookalike</h1>
-        <Link to="/savedforms">
+        <Link to="/savedforms" style={Styles.navBarButtons}>
           <button type="button">Saved forms</button>
           </Link>
-        <Link to="/">
+        <Link to="/" style={Styles.navBarButtons}>
           <button type="button" onClick={createNewFormClickHandler}>New Form</button>
         </Link>
     </div>

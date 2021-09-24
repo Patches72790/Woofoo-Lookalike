@@ -2,9 +2,13 @@ export const Styles: { [key: string]: React.CSSProperties } = {
     navBar: {
         padding: "10px",
         background: "#e66760",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
+        display: "grid",
+        gridAutoFlow: "column",
+    },
+
+    navBarButtons: {
+        alignSelf: "center",
+        justifySelf: "center",
     },
 
     app: {
@@ -24,15 +28,15 @@ export const Styles: { [key: string]: React.CSSProperties } = {
         padding: "10px",
         display: "flex",
         background: "#FFE79F",
-        flexDirection: "row",
-        flexWrap: "wrap",
+        flexFlow: "column wrap",
         columnGap: "5%",
         rowGap: "5%",
-        justifyContent: "space-between",
-        alignItems: "start",
+        justifyContent: "start",
+        alignItems: "center",
     },
 
-    fieldButton: {},
+    fieldButton: {
+    },
     signIn: {},
     formButtons: {
         background: "#FFE79F",

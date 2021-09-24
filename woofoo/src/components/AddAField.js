@@ -12,8 +12,8 @@ const AddAField = ({
     }
 
     return (
-        <div className="button" id="addFields" style={Styles.fieldButton}>
-          <button onClick={handleClick}>{title}</button>
+        <div className="button" id="addFields" >
+          <button onClick={handleClick} style={Styles.fieldButton}>{title}</button>
         </div>
     );
 }
